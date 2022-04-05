@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.main-container {
+    background-color: hsl(216, 50%, 16%);
+    width: 21.1em;
+    height: 36.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+
+.img-content {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+
+.img-main {
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+}
+
+.img-main .nft-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.img-main .view-img {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.img-main .view-img:hover {
+    opacity: 0.6;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.info-content {
+    grid-column: 1/3;
+    padding: 0px 22px;
+}
+
+.info-content h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info-content h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.info-content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+}
+
+
+.price-content {
+    grid-column: 1/2;
+    padding: 0px 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.price-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.time-content {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 22px;
+    gap: 6px;
+}
+
+.time-content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.avatar-content {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0px 22px 16px 22px;
+}
+
+.avatar-content img {
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.avatar-content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+}
+
+.avatar-content a {
+    color: #fff;
+}
+
+.avatar-content a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
